@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+    JBZoo App is universal Joomla CCK, application for YooTheme Zoo component
+
+    @package     jbzoo
+    @version     2.x Pro
+    @author      JBZoo App http://jbzoo.com
+    @copyright   Copyright (C) JBZoo.com,  All rights reserved.
+    @license     http://jbzoo.com/license JBZoo Licence
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test JBZoo jQuery-Factory</title>
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="../src/helper.js"></script>
+    <script src="../src/widget.js"></script>
+    <script src="../src/jbzoo.js"></script>
+    <script src="assets/js/widget.colors.js"></script>
+</head>
+<body>
+<div id="jbcolor" class="jbzoo-colors">
+    <input type="radio" name="white" id="white" title="white" value="white" class="jbcolor-input">
+    <label for="white" class="jbcolor-label">
+        <div style="background-color: #ffffff;"></div>
+    </label>
+
+    <input type="radio" name="white" id="yellow" title="yellow" value="yellow" class="jbcolor-input">
+    <label for="yellow" class="jbcolor-label">
+        <div style="background-color: #fffd00;"></div>
+    </label>
+
+    <input type="radio" name="white" id="red" title="red" value="red" class="jbcolor-input">
+    <label for="red" class="jbcolor-label">
+        <div style="background-color: #770200;"></div>
+    </label>
+
+    <input type="radio" name="white" id="gold" title="gold" value="gold" class="jbcolor-input">
+    <label for="gold" class="jbcolor-label">
+        <div style="background-color: #6f6d00;"></div>
+    </label>
+</div>
+<!-- Init widget. -->
+<script type="text/javascript">
+    jQuery(function ($) {
+        $("#jbcolor").JBZooColors({
+            "multiple": true
+        });
+    });
+</script>
+</body>
+</html>
