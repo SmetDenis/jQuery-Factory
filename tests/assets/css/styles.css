@@ -61,6 +61,8 @@
     transition: 0.5s;
 }
 
+.jbzoo-colors .jbcolor-label.wd-checked,
+.jbzoo-colors .jbcolor-label.wd-checked:hover,
 .jbzoo-colors .jbcolor-label.checked,
 .jbzoo-colors .jbcolor-label.checked:hover {
     opacity: 1;

@@ -18,6 +18,7 @@
     <script src="../src/widget.js"></script>
     <script src="../src/jbzoo.js"></script>
     <script src="assets/js/widget.colors.js"></script>
+    <script src="assets/js/widget.color.inherit.js"></script>
 </head>
 <body>
 <div id="jbcolor" class="jbzoo-colors">
@@ -41,12 +42,34 @@
         <div style="background-color: #6f6d00;"></div>
     </label>
 </div>
+
+<div id="jbcolor-inherit" class="jbzoo-colors">
+    <input type="radio" name="white-inherit" id="white-inherit" title="white" value="white-inherit" class="jbcolor-input">
+    <label for="white-inherit" class="jbcolor-label">
+        <div style="background-color: #ffffff;"></div>
+    </label>
+
+    <input type="radio" name="white-inherit" id="gold-inherit" title="gold" value="gold-inherit" class="jbcolor-input">
+    <label for="gold-inherit" class="jbcolor-label">
+        <div style="background-color: #6f6d00;"></div>
+    </label>
+
+
+    <input type="radio" name="white-inherit" id="red-inherit" title="red" value="red-inherit" class="jbcolor-input">
+    <label for="red-inherit" class="jbcolor-label">
+        <div style="background-color: #770200;"></div>
+    </label>
+
+    <input type="radio" name="white-inherit" id="yellow-inherit" title="yellow" value="yellow-inherit" class="jbcolor-input">
+    <label for="yellow-inherit" class="jbcolor-label">
+        <div style="background-color: #fffd00;"></div>
+    </label>
+</div>
 <!-- Init widget. -->
 <script type="text/javascript">
     jQuery(function ($) {
-        $("#jbcolor").JBZooColors({
-            "multiple": true
-        });
+        $("#jbcolor").JBZooColors();
+        $("#jbcolor-inherit").JBZooColorsInherit();
     });
 </script>
 </body>
