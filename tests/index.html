@@ -99,7 +99,13 @@
     jQuery(function ($) {
         $("#jbcolor").JBZooColors();
         $("#jbcolor-inherit").JBZooColorsInherit();
-        $("#jbcolor-inherit-2").JBZooColorsInheritCustom();
+        $("#jbcolor-inherit-2").JBZooColorsInheritCustom({
+            onColorClick: function(widget, field) {
+                widget._delay(function() {
+                    return alert('Widget delay work!');
+                }, 2000);
+            }
+        });
     });
 </script>
 </body>

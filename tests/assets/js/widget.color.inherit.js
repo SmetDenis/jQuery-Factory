@@ -18,7 +18,8 @@
             'type'    : 'radio',
             'recurse' : {
                 'param1' : 'my-value'
-            }
+            },
+            onColorClick : function (field) {}
         },
         {
             init: function () {
@@ -28,6 +29,10 @@
 
             'click .jbcolor-input': function (e, $this) {
                 var $field = $(this);
+
+                if ($.isFunction($this.options.onColorClick)) {
+                    $this.options.onColorClick.apply($this, [$this, $field]);
+                }
 
                 if (!$this.options.multiple) {
                     if ($field.hasClass('wd-checked')) {
@@ -72,7 +77,7 @@
             _onInit: function () {
                 this.el.prepend(
                     '<p class="widget-name">options.recurse.param1 = ' +
-                    this.options.recurse.param1 +
+                        this.options.recurse.param1 +
                     '</p>');
             }
         }
