@@ -76,7 +76,8 @@
 
                 var oldId = $this.el.attr('data-widgetid');
 
-                oldId = oldId ? ',' + $this._id : $this._id;
+                oldId = oldId ? oldId + ',' + $this._id : $this._id;
+
                 $this.el.attr('data-widgetid', oldId);
 
                 // init

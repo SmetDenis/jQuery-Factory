@@ -17,6 +17,7 @@
     <script src="../src/helper.js"></script>
     <script src="../src/widget.js"></script>
     <script src="../src/jbzoo.js"></script>
+    <script src="assets/js/widget.test.js"></script>
     <script src="assets/js/widget.colors.js"></script>
     <script src="assets/js/widget.color.inherit.js"></script>
     <script src="assets/js/widget.color.inherit.custom.js"></script>
@@ -98,7 +99,7 @@
 <script type="text/javascript">
     jQuery(function ($) {
         $("#jbcolor").JBZooColors();
-        $("#jbcolor-inherit").JBZooColorsInherit();
+        $("#jbcolor-inherit").JBZooColorsInherit().JBZooTest();
         $("#jbcolor-inherit-2").JBZooColorsInheritCustom({
             onColorClick: function(widget, field) {
                 widget._delay(function() {

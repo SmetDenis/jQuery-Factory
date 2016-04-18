@@ -12,6 +12,7 @@
 ;
 (function ($, window, document, undefined) {
 
-    JBZoo.widget('JBZoo.Colors.Inherit.Custom', {}, {});
+    JBZoo.widget('JBZoo.Colors.Inherit.Custom', {}, {
+    });
 
 })(jQuery, window, document);

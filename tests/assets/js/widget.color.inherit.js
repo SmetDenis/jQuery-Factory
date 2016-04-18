@@ -19,7 +19,7 @@
             'recurse' : {
                 'param1' : 'my-value'
             },
-            onColorClick : function (field) {}
+            onColorClick : function (widget, field) {}
         },
         {
             init: function () {
