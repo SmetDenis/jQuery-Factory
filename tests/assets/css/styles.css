@@ -8,6 +8,16 @@
  * @license     http://jbzoo.com/license JBZoo Licence
  */
 
+body {
+    padding: 0;
+    width: 320px;
+    margin: 0 auto;
+}
+
+.jbzoo-colors {
+    background: #E6E6E6;
+    padding: 20px;
+}
 
 .jbzoo-colors .jbcolor-input {
     position: absolute;

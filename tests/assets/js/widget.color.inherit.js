@@ -15,11 +15,18 @@
     JBZoo.widget('JBZoo.Colors.Inherit',
         {
             'multiple': false,
-            'type'    : 'radio'
+            'type'    : 'radio',
+            'recurse' : {
+                'param1' : 'my-value'
+            }
         },
         {
-            'click .jbcolor-input': function (e, $this) {
+            init: function () {
+                this._onInit();
+                this.el.find('input[type=' + this.options.type + ']:checked').next().addClass('checked');
+            },
 
+            'click .jbcolor-input': function (e, $this) {
                 var $field = $(this);
 
                 if (!$this.options.multiple) {
@@ -60,6 +67,13 @@
                     }
 
                 }
+            },
+
+            _onInit: function () {
+                this.el.prepend(
+                    '<p class="widget-name">options.recurse.param1 = ' +
+                    this.options.recurse.param1 +
+                    '</p>');
             }
         }
     );
