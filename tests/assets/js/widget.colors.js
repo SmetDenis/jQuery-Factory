@@ -29,7 +29,17 @@
             },
 
             'click {element}': function () {
-                alert('Element click');
+                var elem = $(this);
+                if (!elem.hasClass('by-click-element')) {
+                    elem.addClass('by-click-element');
+                }
+            },
+
+            'click {document} .title-jbzoo-colors': function () {
+                var elem = $(this);
+                if (!elem.hasClass('by-click-doc-element')) {
+                    elem.addClass('by-click-doc-element');
+                }
             },
 
             'click .jbcolor-input': function (e, $this) {
