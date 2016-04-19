@@ -28,6 +28,10 @@
                 this.el.find('input[type=' + this.options.type + ']:checked').next().addClass('checked');
             },
 
+            'click {element}': function () {
+                alert('Element click');
+            },
+
             'click .jbcolor-input': function (e, $this) {
                 var $field = $(this);
 
