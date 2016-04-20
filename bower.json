@@ -1,0 +1,22 @@
+{
+    "name": "jbzoo-jquery-factory",
+    "description": "JBZoo jQyery widget factory",
+    "main": [
+        "./src/widget.js",
+        "./src/jbzoo.js"
+    ],
+    "author": [
+        "Denis Smetannikov <denis@jbzoo.com>",
+        "Sergey Kalistratov <kalistratov.s.m@gmail.com>"
+    ],
+    "license": "MIT",
+    "keywords": [
+        "jquery",
+        "factory"
+    ],
+    "homepage": "https://github.com/JBZoo/jQuery-Factory",
+    "dependencies": {
+        "jquery": "^2.2.3",
+        "jbzoo-utils": "^1.1.0"
+    }
+}
