@@ -97,18 +97,45 @@
         <div style="background-color: #770200;"></div>
     </label>
 </div>
+<h3 class="destroy-title">Color widget 4</h3>
+<div id="jbcolor-destroy" class="jbzoo-colors">
+    <input type="radio" name="white-inherit-2" id="white-destroy" title="white" value="white-inherit" class="jbcolor-input">
+    <label for="white-destroy" class="jbcolor-label">
+        <div style="background-color: #ffffff;"></div>
+    </label>
+
+    <input type="radio" name="white-inherit-2" id="gold-destroy" title="gold" value="gold-inherit" class="jbcolor-input">
+    <label for="gold-destroy" class="jbcolor-label">
+        <div style="background-color: #6f6d00;"></div>
+    </label>
+
+    <input type="radio" name="white-inherit-2" id="yellow-destroy" title="yellow" value="yellow-inherit" class="jbcolor-input">
+    <label for="yellow-destroy" class="jbcolor-label">
+        <div style="background-color: #fffd00;"></div>
+    </label>
+
+    <input type="radio" name="white-inherit-2" id="red-destroy" title="red" value="red-inherit" class="jbcolor-input">
+    <label for="red-destroy" class="jbcolor-label">
+        <div style="background-color: #770200;"></div>
+    </label>
+</div>
 <!-- Init widget. -->
 <script type="text/javascript">
     jQuery(function ($) {
         $("#jbcolor").JBZooColors();
+
         $("#jbcolor-inherit").JBZooColorsInherit().JBZooTest();
+
         $("#jbcolor-inherit-2").JBZooColorsInheritCustom({
             onColorClick: function(widget, field) {
                 widget._delay(function() {
                     return alert('Widget delay work!');
                 }, 2000);
             }
+
         });
+
+        $("#jbcolor-destroy").JBZooTest().JBZooColorsInheritCustom().data('JBZooColorsInheritCustom').destroy();
     });
 </script>
 </body>

@@ -16,6 +16,13 @@
         {
             init: function () {
                 this.el.addClass('from-test-widget');
+            },
+
+            'click .jbcolor-label': function (e, $this) {
+                if ($this.attr('id') === 'jbcolor-destroy') {
+                    var $field = $(this);
+                    alert($field.attr('for'));
+                }
             }
         }
     );
