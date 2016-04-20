@@ -14,6 +14,11 @@ body {
     margin: 0 auto;
 }
 
+.color-wrapper {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
 .jbzoo-colors {
     background: #E6E6E6;
     padding: 20px;

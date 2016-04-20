@@ -42,6 +42,10 @@
                 }
             },
 
+            'click {closest .color-wrapper}' : function () {
+                alert('Closest query.');
+            },
+
             'click .jbcolor-input': function (e, $this) {
                 var $field = $(this);
 
