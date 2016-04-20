@@ -25,6 +25,13 @@
             init: function () {
                 this._onInit();
                 this.el.find('input[type=' + this.options.type + ']:checked').next().addClass('checked');
+                this.el.append(
+                    '<input type="radio" name="blue-inherit-2" id="blue-inherit-2" title="red" value="red-inherit"' +
+                    ' class="jbcolor-input">' +
+                        '<label for="blue-inherit-2" class="jbcolor-label">' +
+                            '<div style="background-color: #144f77;"></div>' +
+                        '</label>'
+                );
             },
 
             'click .jbcolor-input': function (e, $this) {
