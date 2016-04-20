@@ -2,8 +2,8 @@
     "name": "jbzoo-jquery-factory",
     "description": "JBZoo jQyery widget factory",
     "main": [
-        "./src/widget.js",
-        "./src/jbzoo.js"
+        "src/widget.js",
+        "src/jbzoo.js"
     ],
     "author": [
         "Denis Smetannikov <denis@jbzoo.com>",
