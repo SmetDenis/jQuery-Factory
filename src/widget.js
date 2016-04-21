@@ -98,7 +98,7 @@
                 extendedEventList   = {},
                 lastParent          = '';
 
-            if ($jbzoo.countProps(widgetPath) > 1) {
+            if ($jbzoo.count(widgetPath) > 1) {
                 var parentName = '';
 
                 $.each(widgetPath, function (n, name) {

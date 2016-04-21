@@ -1,6 +1,6 @@
 {
     "name": "jbzoo-jquery-factory",
-    "description": "JBZoo jQyery widget factory",
+    "description": "JBZoo jQuery widget factory",
     "main": [
         "src/widget.js",
         "src/jbzoo.js"
@@ -11,6 +11,7 @@
     ],
     "license": "MIT",
     "keywords": [
+        "jbzoo",
         "jquery",
         "factory"
     ],
