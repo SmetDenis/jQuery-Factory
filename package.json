@@ -2,7 +2,7 @@
     "name"                 : "jbzoo-jquery-factory",
     "description"          : "JBZoo jQuery widget factorys",
     "license"              : "MIT",
-    "version"              : "0.0.2",
+    "version"              : "1.0.1",
     "keywords"             : [
         "jbzoo",
         "jquery",
@@ -20,6 +20,9 @@
     "preferGlobal"         : true,
     "dependencies"         : {
         "jquery" : "^2.2.3",
-        "jbzoo-utols" : "^1.0.0"
+        "jbzoo-utils" : "^1.0.0"
+    },
+    "devDependencies": {
+        "gulp" : "^3.9.0"
     }
 }
