@@ -21,8 +21,5 @@
     "dependencies"         : {
         "jquery" : "^2.2.3",
         "jbzoo-utils" : "^1.0.0"
-    },
-    "devDependencies": {
-        "gulp" : "^3.9.0"
     }
 }
