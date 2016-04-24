@@ -22,7 +22,7 @@
     /**
      * JBZoo widget factory
      */
-    $.extend(JBZoo.constructor.prototype, {
+    $.extend(window.JBZoo, {
 
         /**
          * Widget creator
@@ -100,15 +100,12 @@
 
             if ($jbzoo.count(widgetPath) > 1) {
                 var parentName = '';
-
                 $.each(widgetPath, function (n, name) {
                     parentName += $.trim(name);
-
                     if (widgets[parentName] && widgetName != parentName) {
                         lastParent = parentName;
 
                         $jbzoo.classExtend(widgets[widgetName], widgets[parentName]);
-
                         extendedEventList   = $.extend(true, extendedEventList, widgets[parentName].prototype._eventList);
                         extendedDefaultList = $.extend({}, extendedDefaultList, widgets[parentName].prototype._defaults);
 
