@@ -5,7 +5,7 @@ node_js:
 
 before_script:
   - npm install gulp -g
-  - npm install gulp gulp-uglify gulp-concat
+  - npm install gulp-uglify gulp-concat
 
 script:
   - gulp build
