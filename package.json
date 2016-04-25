@@ -25,6 +25,7 @@
     "scripts": {
         "gulp_install": "npm install gulp -g",
         "gulp_plugins": "npm install gulp gulp-uglify gulp-concat",
-        "build": "gulp build"
+        "build": "gulp build",
+        "script": "npm run gulp_install & npm run gulp_plugins & npm run build"
     }
 }
