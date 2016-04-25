@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - "5"
+  - "4"
+
+before_script:
+  - npm install gulp -g
+  - npm install gulp gulp-uglify gulp-concat
+
+script:
+  - gulp build
