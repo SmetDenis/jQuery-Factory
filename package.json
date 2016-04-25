@@ -21,5 +21,10 @@
     "dependencies"         : {
         "jquery" : "^2.2.3",
         "jbzoo-utils" : "^1.0.0"
+    },
+    "scripts": {
+        "gulp_install": "npm install gulp -g",
+        "gulp_plugins": "npm install gulp gulp-uglify gulp-concat",
+        "build": "gulp build"
     }
 }

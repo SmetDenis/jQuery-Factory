@@ -3,9 +3,5 @@ node_js:
   - "5"
   - "4"
 
-before_script:
-  - npm install gulp -g
-  - npm install gulp-uglify gulp-concat
-
 script:
-  - gulp build
+  - npm run gulp_install gulp_plugins build
