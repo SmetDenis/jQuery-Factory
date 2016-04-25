@@ -19,13 +19,15 @@
     "main"                 : "src/widget.js",
     "preferGlobal"         : true,
     "dependencies"         : {
-        "jquery" : "^2.2.3",
+        "jquery"      : "^2.2.3",
         "jbzoo-utils" : "^1.0.0"
     },
-    "scripts": {
-        "gulp_install": "npm install gulp -g",
-        "gulp_plugins": "npm install gulp gulp-uglify gulp-concat",
-        "build": "gulp build",
-        "script": "npm run gulp_install & npm run gulp_plugins & npm run build"
+    "devDependencies"      : {
+        "gulp"        : "^3.9.1",
+        "gulp-uglify" : "^1.5.3",
+        "gulp-concat" : "^2.6.0"
+    },
+    "scripts"              : {
+        "build" : "gulp build"
     }
 }
