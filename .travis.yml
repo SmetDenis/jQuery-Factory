@@ -4,4 +4,6 @@ node_js:
   - "4"
 
 script:
-  - npm run gulp_install gulp_plugins build
+  - npm run gulp_install
+  - npm run gulp_plugins
+  - npm run build
