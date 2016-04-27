@@ -267,10 +267,10 @@ JBZoo.widget('JBZoo.MyWidget', { // Точка - это "extend". Можно и�
 Другими словами, в название виджета, сначала указываете имя родительского виджета, далее через точку название своего
 . Вложенность ничем не ограничена. Главное чтобы все родительские плагины были подключены выше.
 ```js
-JBZoo.widget('JBZoo.MyWidget', {}, {});
-JBZoo.widget('JBZoo.MyWidget.MyFormWidget', {}, {});
-JBZoo.widget('JBZoo.MyWidget.MyFormWidget.OMG', {}, {});
-JBZoo.widget('JBZoo.MyWidget.MyFormWidget.OMG.Bazinga', {}, {});
+JBZoo.widget('JBZoo.Tabs', {}, {});
+JBZoo.widget('JBZoo.Tabs.Custom', {}, {});
+JBZoo.widget('JBZoo.Tabs.Custom.OMG', {}, {});
+JBZoo.widget('JBZoo.Tabs.Custom.OMG.Bazinga', {}, {});
 
 /**
  * Переопределение значений по умолчанию рекурсивное, поэтому
@@ -301,7 +301,7 @@ JBZoo.widget('JBZoo.MyWidget.MyFormWidget', {
 ```html
 <script>
     jQuery(function ($) {
-        $("#my-id").JBZooMyWidgettMyFormWidget();
+        $("#my-id").JBZooMyWidgetMyFormWidget({/* опции */}); // Убираем точки
     });
 </script>
 ```
