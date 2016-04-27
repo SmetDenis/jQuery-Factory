@@ -59,8 +59,8 @@ $ npn install jbzoo-jquery-factory   // вариант 2
 
 <script>
 jQuery(function ($) {
-    $("#my-id").MyWidget({'styles' : {'background': '#fff'}}); // остальные опции берутся из значений опций по умолчанию
-);
+    $(".myWidgetClass").MyWidget({'styles' : {'background': '#fff'}}); // остальные опции берутся из значений опций по умолчанию
+});
 </script>
 ```
 
