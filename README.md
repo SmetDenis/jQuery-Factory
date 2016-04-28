@@ -20,7 +20,7 @@
 $ bower install jbzoo-jquery-factory // вариант 1 
 $ npn install jbzoo-jquery-factory   // вариант 2
 ```
-После этого в вашем проекте будет создана директория `bower_components`, в которой будут
+После этого в вашем проекте будет создана директория `bower_components` (или `node_modules`), в которой будут
 находится все необходимые для подключения файлы.
 
 Теперь в главном файле вашего проекта необходимо подключить JS файлы библиотек ***jquery, jbzoo-utils*** и ***jbzoo-jquery-factory***. Конечно, вы можете их включить в ваш общий `bundle.js` через gulp, grunt или webpack.
@@ -34,17 +34,17 @@ $ npn install jbzoo-jquery-factory   // вариант 2
 
 ## Пример. Слова ничто - покажи мне код!
 
-Пример html:
+Пример произвольного html, который будем использовать в нашем примере
 ```html
 <div class="wd-wrapper">
-    <div class="myWidgetClass">
+    <div class="myWidgetClass jsWidget"> <!-- Тут вешаем виджет -->
         <a href="#tab" class="my-class">Title</a>
         <a href="#tab-2" class="class-title">Title-2</a>
     </div>
 </div>
 
 <div class="wd-wrapper-2">
-    <div class="jsWidget">
+    <div class="jsWidget"> <!-- Тут вешаем виджет -->
         <a href="#link" class="my-class">Link</a>
         <a href="#how-to-use" class="class-title">How to use?</a>
         <div class="myClass">
@@ -54,12 +54,14 @@ $ npn install jbzoo-jquery-factory   // вариант 2
     </div>
 </div>
 
+<!-- Внешний HTML -->
 <h1 class="page-title">My page title</h1>
 <p class="text">My custom text</p>
 
+<!-- Инициализация -->
 <script>
 jQuery(function ($) {
-    $(".myWidgetClass").MyWidget({'styles' : {'background': '#fff'}}); // остальные опции берутся из значений опций по умолчанию
+    $(".jsWidget").MyWidget({'styles' : {'background': '#fff'}}); // остальные опции берутся из значений опций по умолчанию
 });
 </script>
 ```
