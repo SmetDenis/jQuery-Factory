@@ -332,7 +332,7 @@ jQuery(function ($) {
 $('#my-div').MyWidget('setValue', 50, 'secondArg');
 $('#my-div').data('MyWidget').setValue(50, 'secondArg');
 // Если он вдруг еще не инициализирован
-$('#my-div').MyWidget().MyWidget('setValue', 50);
+$('#my-div').MyWidget({}).MyWidget('setValue', 50);
 ```
 
 
