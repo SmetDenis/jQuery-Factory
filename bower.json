@@ -18,6 +18,6 @@
     "homepage": "https://github.com/JBZoo/jQuery-Factory",
     "dependencies": {
         "jquery": "*",
-        "jbzoo-utils": "master"
+        "jbzoo-utils": "*"
     }
 }
