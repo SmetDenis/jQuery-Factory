@@ -19,7 +19,7 @@
     "main"                 : "src/widget.js",
     "preferGlobal"         : true,
     "dependencies"         : {
-        "jquery"      : "^2.2.3",
+        "jquery"      : ">=3.5.0",
         "jbzoo-utils" : "^1.0.0"
     },
     "devDependencies"      : {
